@@ -1,4 +1,7 @@
 import './Style/index.css'
+import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiJest } from "react-icons/si";
 function Services() {
   return (
     <div id="service" className="flex justify-center items-center flex-col bg-[#0e1538] md:h-[120vh] h-[220vh] pb-5 ">
@@ -33,7 +36,7 @@ function Services() {
           <button className='px-[1rem] sm:px-[2rem] hover:bg-[#55e6a5] transition-all duration-200 py-[0.5rem] sm:py-[1rem]
              md:text-[14px] text-[12px] font-bold uppercase animate-ease border-solid border-[#55e6a5] border-[2px] bg-transparent
              hover:text-black text-white  flex items-center  hover:scale-95'>
-              CONTACT ME </button>
+              LEARN MORE</button>
           </div>
        </div>
           ))}
@@ -47,22 +50,22 @@ export default Services
 
 const data=[
   {
-    title:"next js dev",
-    icons:"ll",
+    title:"React.js dev",
+    icons:< FaReact color="#5ED4F4" />,
     discription:` Lorem ipsum, dolor sit amet consectetur4   Lorem ipsum, dolor sit amet consectetur4  Lorem ipsum,
      dolor sit amet consectetur4`,
     button:"reacd more"
   },
   {
-    title:"next js dev",
-    icons:"ll",
+    title:"Next.js dev",
+    icons:<RiNextjsFill  color='#00000' />,
     discription:` Lorem ipsum, dolor sit amet consectetur4  Lorem ipsum, dolor sit amet consectetur4 
      Lorem ipsum, dolor sit amet consectetur4` ,
     button:"reacd more"
   },
   {
-    title:"next js dev",
-    icons:"ll",
+    title:"Test With Jest",
+    icons:<SiJest />,
     discription:` Lorem ipsum, dolor sit amet consectetur4  Lorem ipsum, dolor sit amet consectetur4 
      Lorem ipsum, dolor sit amet consectetur4`,
     button:"reacd more"

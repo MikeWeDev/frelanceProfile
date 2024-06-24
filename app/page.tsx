@@ -2,7 +2,7 @@
 import Nav from '@/app/Component/Nav'
 import { useEffect, useState } from 'react';
 import MobileNav from './Component/MobileNav';
-import Hero from './Component/Hero';
+import Hero from './Component/Hero/Hero'
 import About from './Component/About';
 import Skills from './Component/Skills';
 import Services from './Component/Services'

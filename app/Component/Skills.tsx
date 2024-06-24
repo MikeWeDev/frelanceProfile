@@ -1,4 +1,7 @@
 import './Style/index.css'
+import {  faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faTypo3 } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 function Skills() {
   return (
     <div id='skill' className='bg-[#25283D] p-2 h-[160vh] md:h-[100vh] flex items-center justify-center '>
@@ -11,13 +14,10 @@ function Skills() {
           data-aos="zoom-in"  data-aos-duration="1300" data-aos-delay="500">LETS EXPLORE POPULAR <br></br>
         SKILLS AND <span className='text-yellow-400'>EXPRIANCE</span> </h1>
         <p className="text-[12px] opacity-[0.3]"   data-aos="zoom-in"  data-aos-duration="1500" data-aos-delay="600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Blanditiis officia veritatis dolores saepe sint aliquam 
-             porro animi molestiae nulla laborum?
-             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-             Blanditiis officia veritatis dolores saepe sint aliquam 
-             porro animi molestiae nulla laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            
+        I am highly proficient with a range of modern web development tools and frameworks.
+         This includes deep experience with GitHub for version control and collaboration,
+         as well as expertise in React, Next.js, TypeScript, Tailwind CSS, JavaScript, and Jest.
+         I leverage this robust skill set to efficiently build high-quality, responsive, and performant web applications. 
         </p>
        <button   data-aos="zoom-in"  data-aos-duration="1700" data-aos-delay="700"
         className="w-[50%] h-[24px] md:w-[40%] transition-all duration-200 py-6 hover:bg-yellow-400 border-none text-black flex justify-center items-center bg-[#55e6a5] border-[2px] text-[15px] uppercase font-bold ">LEARN MORE</button>
@@ -26,23 +26,25 @@ function Skills() {
         <div className="stage-cube-cont md:mt-[-100px] mt-[60px]"  data-aos="zoom-in" 
         data-aos-duration="2100" data-aos-delay="1000">
             <div className="cube-spiner">
+            <div className="cube-spiner">
                 <div className="face1">
-                   js               
+                    <FontAwesomeIcon icon={faTypo3}
+                    color="#007ACC"/>
                 </div>
                 <div className="face2">
-                   tail
+                    <FontAwesomeIcon icon={faHtml5} color="#F06529"/>
                 </div>
                 <div className="face3">
-                   react
+                    <FontAwesomeIcon icon={faCss3} color="#28A4D9"/>
                 </div>
                 <div className="face4">
-                   next
+                    <FontAwesomeIcon icon={faJsSquare} color="#EFD81D"/>
                 </div>
                 <div className="face5">
-                  type
+                    <FontAwesomeIcon icon={faReact} color="#5ED4F4"/>
                 </div>
                 <div className="face6">
-                  git
+                    <FontAwesomeIcon icon={faGitAlt} color="#EC4D28"/>
                 </div>
                
             </div>
@@ -51,12 +53,8 @@ function Skills() {
         </div>
        </div>
     </div>
+    </div>
   )
 }
 
 export default Skills
-
-/*"@fortawesome/fontawesome-svg-core": "^6.5.1",
-"@fortawesome/free-brands-svg-icons": "^6.5.1",
-"@fortawesome/free-solid-svg-icons": "^6.5.1",
-"@fortawesome/react-fontawesome": "^0.2.0",*/

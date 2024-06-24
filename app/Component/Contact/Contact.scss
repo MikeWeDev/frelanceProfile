@@ -8,11 +8,26 @@
 .containerC {
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background: url("/photo_2024-06-22_13-10-36 (2).jpg");
+    background-size: cover;
+    background-position: center;
     padding:50px 0;
+    position: relative;
     @media(max-width:567px){
       padding:200px 0;
+     
     }
+  }
+  .containerC::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3);
   }
   .contact-page{
     width: 100%;
@@ -45,14 +60,13 @@
         
         }
         p{
-            font-size:13px;
+            font-size:15px;
             font-family:sans-serif;
             font-weight: 100;
             min-width:fit-content;
-            animation:pulse 1.4s;
             line-height:20px;
             margin:30px 40px;
-            color:black;
+            color:white;
            
         }
     }
@@ -83,7 +97,7 @@
             gap:30px;
             padding:10px;
             margin-top:30px;
-            font-size:13px;
+            font-size:17px;
             margin-left:50px;
             @media(max-width:567px){
               margin-left:10px;
@@ -95,9 +109,10 @@
             }
             strong{
              font-weight:800;
+             color: white;
              span{
-              color:#333;
-              font-weight:500;
+              color:white;
+              font-weight:200;
              }
             }
          }
@@ -177,7 +192,7 @@
             }
             .call{
               .phone{
-                font-size: 18px;
+                font-size: 25px;
                 letter-spacing: 3px;
                 text-decoration: none;
                 padding: 8px 10px;
@@ -213,9 +228,9 @@
             border-bottom:2px solid teal;
             font-size: 16px;
             padding: 20px 20px;
-            margin:0px;
+            margin:10px 0px;
             color: black;
-            background:transparent;
+            background:white;
   
           }
         

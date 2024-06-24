@@ -1,6 +1,6 @@
 import "./Contact.scss"
 import  { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { faAddressCard, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faFacebook, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -38,9 +38,9 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="containerC flex justify-between contact-page">
+    <div  id="contact" className="containerC flex justify-between contact-page">
       <div className="text-zone">
-        <h1 className="h1 text-black"
+        <h1 className="h1 text-white"
          data-aos="zoom-in" 
          data-aos-duration="1000" data-aos-delay="400">
           {letters.map((i, index) => {
@@ -51,7 +51,7 @@ const Contact = () => {
             );
           })}
         </h1>
-        <p className="text-black"
+        <p className="text-white"
          data-aos="zoom-in" 
          data-aos-duration="1400" data-aos-delay="500">
           IF YOU WANT TO CONTACT US. USE THE FOLLOWING ADDRESSES
@@ -83,22 +83,20 @@ const Contact = () => {
                   required
                 />
               </li>
-              <li>
+              <li data-aos="zoom-in" 
+                  data-aos-duration="2400" data-aos-delay="600">
                 <textarea
                   name="message"
                   placeholder="Message"
-                  className="text-black"
-                  data-aos="zoom-in" 
-                  data-aos-duration="2400" data-aos-delay="600" />
-                <input type="submit" value="Send" className="flat"  data-aos="zoom-in" 
-                  data-aos-duration="2600" data-aos-delay="600" />
+                   />
+                <input type="submit" value="Send" className="flat"  />
               </li>
             </ul>
           </form>
 
           <section className="additional flex-1 text-black">
             <div className="call-us"  data-aos="zoom-in" 
-               data-aos-duration="2400" data-aos-delay="800">
+               data-aos-duration="2100" data-aos-delay="700">
               <a
                 href={`tel:${phoneNumber}`}
                 className="phone"
@@ -129,16 +127,16 @@ const Contact = () => {
 
             <div className="social-link" >
               <a href={telegramLink} className="social"  data-aos="zoom-in" 
-                  data-aos-duration="2500" data-aos-delay="1200">
+                  data-aos-duration="2500" data-aos-delay="1000">
                 <FontAwesomeIcon className="linkt" icon={faTelegram} color="#" />
               </a >
               <a href={linkdinUserName} className="social"  data-aos="zoom-in" 
-                  data-aos-duration="2700" data-aos-delay="1500">
+                  data-aos-duration="2700" data-aos-delay="1100">
                 <FontAwesomeIcon className="linkf" icon={faFacebook} color="#"/>
               </a>
               <a href={linkdinUserName} className="social"
                data-aos="zoom-in" 
-               data-aos-duration="2900" data-aos-delay="1700">
+               data-aos-duration="2900" data-aos-delay="1200">
                 <FontAwesomeIcon className="linkv" icon={faWhatsapp}color="#"/>
               </a>
             </div>

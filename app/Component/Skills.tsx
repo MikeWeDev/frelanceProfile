@@ -9,9 +9,9 @@ function Skills() {
        
         <div className="text flex-1 flex flex-col gap-7">
         <h3 className="font-semi-bold text-[25px] text-yellow-400 uppercase"
-          data-aos="zoom-in"  data-aos-duration="1100" data-aos-delay="400">my skills</h3>
+          data-aos="zoom-in"  data-aos-duration="700" data-aos-delay="400">my skills</h3>
         <h1 className="bold text-[20px] md:text-[25px] "
-          data-aos="zoom-in"  data-aos-duration="1300" data-aos-delay="500">LETS EXPLORE POPULAR <br></br>
+          data-aos="zoom-in"  data-aos-duration="800" data-aos-delay="500">LETS EXPLORE POPULAR <br></br>
         SKILLS AND <span className='text-yellow-400'>EXPRIANCE</span> </h1>
         <p className="text-[12px] opacity-[0.3]"   data-aos="zoom-in"  data-aos-duration="1500" data-aos-delay="600">
         I am highly proficient with a range of modern web development tools and frameworks.
@@ -19,12 +19,12 @@ function Skills() {
          as well as expertise in React, Next.js, TypeScript, Tailwind CSS, JavaScript, and Jest.
          I leverage this robust skill set to efficiently build high-quality, responsive, and performant web applications. 
         </p>
-       <button   data-aos="zoom-in"  data-aos-duration="1700" data-aos-delay="700"
+       <button   data-aos="zoom-in"  data-aos-duration="900" data-aos-delay="700"
         className="w-[50%] h-[24px] md:w-[40%] transition-all duration-200 py-6 hover:bg-yellow-400 border-none text-black flex justify-center items-center bg-[#55e6a5] border-[2px] text-[15px] uppercase font-bold ">LEARN MORE</button>
         </div>
         <div className="icon flex-1  ">
         <div className="stage-cube-cont md:mt-[-100px] mt-[60px]"  data-aos="zoom-in" 
-        data-aos-duration="2100" data-aos-delay="1000">
+        data-aos-duration="1000" data-aos-delay="1000">
             <div className="cube-spiner">
             <div className="cube-spiner">
                 <div className="face1">

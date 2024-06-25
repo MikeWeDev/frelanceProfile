@@ -4,15 +4,15 @@ function Projects() {
     <div id="project" className='flex  flex-col items-center md:h-[160vh] h-[300vh] bg-[#172A3A] p-5'>
       <h1 className='text-[12px] text-white uppercase py-5'
         data-aos="zoom-in" 
-        data-aos-duration="1000" data-aos-delay="400">lates projects</h1>
+        data-aos-duration="800" data-aos-delay="400">lates projects</h1>
       <h2 className='py-8 md:text-[30px] text-[23px]  text-white'
         data-aos="zoom-in" 
-        data-aos-duration="1400" data-aos-delay="500">MY BEST <span className="text-yellow-400">PROJECT</span> </h2>
+        data-aos-duration="900" data-aos-delay="500">MY BEST <span className="text-yellow-400">PROJECT</span> </h2>
       <div className="flex flex-col justify-between w-[95%]  h-[80%] gap-10  ">
         {pictures.map((items,index)=>(
          <div className="flex md:flex-row flex-col  w-[100%] h-full justify-between items-center 
          md:border-b-[4px] md:border-b-white p-2 gap-5 " key={index}
-         data-aos="zoom-in"  data-aos-duration="2100" data-aos-delay="500">
+         data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="500">
 
          <div className="md:w-[50%] md:h-full w-[90%] h-[40%] flex items-center justify-center bg-[#12f7ff] relative  rounded-lg">
          

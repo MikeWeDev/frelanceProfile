@@ -58,7 +58,7 @@ function Nav({open,nav}:props) {
              smooth={true}  
              duration={500} >Contact</Link>
             </div>
-            <div className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" 
+            <div className="w-[3rem] md:hidden h-[3rem] cursor-pointer text-yellow-300" 
              onClick={open}>
               <GiHamburgerMenu />
               </div>

@@ -53,7 +53,7 @@ const Contact = () => {
         </h1>
         <p className="text-white"
          data-aos="zoom-in" 
-         data-aos-duration="1400" data-aos-delay="500">
+         data-aos-duration="1000" data-aos-delay="500">
           IF YOU WANT TO CONTACT US. USE THE FOLLOWING ADDRESSES
         </p>
 
@@ -62,7 +62,7 @@ const Contact = () => {
             <ul>
               <li className="half text-black"
                data-aos="zoom-in" 
-               data-aos-duration="2000" data-aos-delay="600">
+               data-aos-duration="1100" data-aos-delay="600">
                 <input
                   type="text"
                   className="text"
@@ -73,7 +73,7 @@ const Contact = () => {
               </li>
               <li className="half text-black"
                data-aos="zoom-in" 
-               data-aos-duration="2200" data-aos-delay="600">
+               data-aos-duration="1200" data-aos-delay="600">
                 <input
                   type="text"
                   className="text"
@@ -84,7 +84,7 @@ const Contact = () => {
                 />
               </li>
               <li data-aos="zoom-in" 
-                  data-aos-duration="2400" data-aos-delay="600">
+                  data-aos-duration="1400" data-aos-delay="600">
                 <textarea
                   name="message"
                   placeholder="Message"
@@ -96,7 +96,7 @@ const Contact = () => {
 
           <section className="additional flex-1 text-black">
             <div className="call-us"  data-aos="zoom-in" 
-               data-aos-duration="2100" data-aos-delay="700">
+               data-aos-duration="1500" data-aos-delay="700">
               <a
                 href={`tel:${phoneNumber}`}
                 className="phone"
@@ -127,16 +127,16 @@ const Contact = () => {
 
             <div className="social-link" >
               <a href={telegramLink} className="social"  data-aos="zoom-in" 
-                  data-aos-duration="2500" data-aos-delay="1000">
+                  data-aos-duration="1500" data-aos-delay="1000">
                 <FontAwesomeIcon className="linkt" icon={faTelegram} color="#" />
               </a >
               <a href={linkdinUserName} className="social"  data-aos="zoom-in" 
-                  data-aos-duration="2700" data-aos-delay="1100">
+                  data-aos-duration="1700" data-aos-delay="1100">
                 <FontAwesomeIcon className="linkf" icon={faFacebook} color="#"/>
               </a>
               <a href={linkdinUserName} className="social"
                data-aos="zoom-in" 
-               data-aos-duration="2900" data-aos-delay="1200">
+               data-aos-duration="1900" data-aos-delay="1200">
                 <FontAwesomeIcon className="linkv" icon={faWhatsapp}color="#"/>
               </a>
             </div>

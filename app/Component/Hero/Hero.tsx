@@ -14,7 +14,7 @@ function Hero() {
      className=" bg-cover overflow-hidden mt-[12vh] bg-center h-[160vh] md:h-[88vh] flex  justify-center items-center">
       <Particle   />
      <div className="con flex md:flex-row flex-col justify-center
-     w-[95%] items-center h-[80%] lg:h-auto gap-5 ">
+     w-[95%] items-center h-[80%] lg:h-auto gap-2 ">
       
       <div className="text ml-[20px] md:ml-2  text-white
        flex flex-col flex-1   gap-y-5 "  data-aos="zoom-in" 
@@ -74,8 +74,8 @@ function Hero() {
            
           </div>
       </div>
-      <div className="flex-1 relative h-[70vh] w-[70vw] " data-aos="zoom-in" 
-                  data-aos-duration="2500" data-aos-delay="2000">
+      <div className="flex-1 relative  md:h-[70vh] h-[50vh] w-[70vw] " data-aos="zoom-in" 
+                  data-aos-duration="1500" data-aos-delay="1000">
         <Image 
         src='/images/u1.jpg'
         alt='user'

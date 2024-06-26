@@ -14,23 +14,23 @@ function Projects() {
          md:border-b-[4px] md:border-b-white p-2 gap-5 " key={index}
          data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="500">
 
-         <div className="md:w-[50%] md:h-full w-[90%] h-[40%] flex items-center justify-center bg-[#12f7ff] relative  rounded-lg">
+         <div className="md:w-[50%] md:h-full w-[90%] h-[40%] flex items-center justify-center bg-[#12f7ff] relative 
+          rounded-lg">
          
            <div className="border-[2px] w-[80%]  z-10 text-black  h-full flex justify-center items-center flex-col">
            <h1 className='text-white  md:text-[25px] text-[20px]'>{items.title}</h1>
            <p className='text-white lg:text-[15px] md:text-[12px] text-[10px] mt-2 overflow-y-hidden opacity-[0.5]'>
            {items.desc}
           </p>
-              <button className='border-[2px] border-[#ED217C] text-[#ED217C] rounded-full  p-5 m-3 '>LINK</button>
+              <button className='border-[2px] border-[#ED217C] text-[#ED217C] rounded-full  p-4 m-2 '>LINK</button>
            </div>
-
 
          <Image
          src={items.img}
          alt='user'
          layout='fill'
          objectFit='contain'
-         className='w-full h-full absolute  z-20 object-contain hover:opacity-0 p-2 md:p-1'
+         className='w-[100vw] h-[100vh] absolute  z-20 object-contain hover:opacity-0 '
          />
          </div>
          <div className="flex flex-col justify-between items-center md:w-[50%] w-[90%] md:h-[90%] h-[60%] ">
@@ -60,11 +60,12 @@ export default Projects
      title:"E-COMMERCE",
       desc:`This is an e-commerce website that is made by REACT.JS with  | tailwind css and | vanilla js
    that has all necessary functionality that most e-commerce website has on there user interface.`,
-    img:"/images/b2.jpg"
+    img:"/images/banner.jpg"
   },
   {
     title:"REAL-STATE",
-    img:"/images/b2.jpg",
+    img:"/images/banner.jpg"
+    ,
     desc:"This is a real-state website that give all neccessary information about the campany and it is built by  REACT.JS with  | tailwind css and | vanilla js "
 
   },
@@ -72,6 +73,6 @@ export default Projects
     title:"CAR-RENTAL",
     desc:`This is Car Rental website that is made by REACT.JS with  | tailwind css and | vanilla js
     that has all necessary functionality to show all info about the car dealership campany.`,
-    img:"/images/b2.jpg"
+    img:"/images/banner.jpg"
   },
  ]

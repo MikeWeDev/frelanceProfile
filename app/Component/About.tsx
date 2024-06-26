@@ -42,7 +42,7 @@ function About() {
         </div>
         <div className="md:w-[300px] md:h-[300px] md:mx-[2rem]
          md:mt-2  w-[250px] h-[250px] relative "
-         data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1500">
+         data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000">
         <Image 
         src='/images/about.jpg'
         alt='user'

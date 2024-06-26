@@ -7,10 +7,10 @@ function Services() {
     <div id="service" className="flex justify-center items-center flex-col bg-[#0e1538] md:h-[120vh] h-[220vh] pb-5 ">
         <h1 className="text-[#55e6a5]   text-[35px] font-bold pb-5"
          data-aos="zoom-in" 
-        data-aos-duration="800" data-aos-delay="400">Services</h1>
+        data-aos-duration="700" data-aos-delay="400">Services</h1>
         <p className="text-white opacity-[0.6] md:text-[16px] text-[12px] pb-2 w-[80%]"
          data-aos="zoom-in" 
-        data-aos-duration="1500" data-aos-delay="500">
+        data-aos-duration="600" data-aos-delay="500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, est.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, est.
           Lorem ipsum dolor sit amet, consectetur
@@ -18,7 +18,7 @@ function Services() {
 
         <div className="con md:h-[50%] h-[80%]  w-[95%] border-2px border-yellow-400 flex md:flex-row flex-col
          items-center justify-between mt-5 md:mt-10 gap-y-5"
-          data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="600">
+          data-aos="zoom-in"  data-aos-duration="500" data-aos-delay="500">
           {data.map((item,index)=>(
           <div key={index} className="box  md:w-[30%] w-[70%]  h-[100%] bg-black flex 
           flex-col justify-between items-center 

@@ -27,7 +27,7 @@ export default function Home() {
 
     <div className="overflow-x-hidden" > 
     <Nav nav={nav} open={openNav} />
-    <MobileNav nav={nav} closeNav={closeNav} />
+    <MobileNav nav={nav} closeNav={closeNav}  />
     <Hero />
     <About />
     <Skills />

@@ -90,7 +90,7 @@ function Hero() {
         src='/images/u1.jpg'
         alt='user'
         layout='fill'
-        className='rounded-full ' />
+        className='rounded-full h-[80%] md:h-[100%] ' />
       </div>
      </div>
     </div>

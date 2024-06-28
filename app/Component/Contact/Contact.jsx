@@ -3,13 +3,15 @@ import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { faAddressCard, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram, faFacebook, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faTelegram, faFacebook, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   const telegramUserName = '@Mikyyetklyelij';
   const linkdinUserName = 'https://www.linkedin.com/in/mikyas-negash-01b400263';
   const phoneNumber = '0902464535';
   const phoneNumber2 = '0901962782';
+  const whatsapplink="https://wa.me/qr/3GK62EOD3WVQE1"
+
 
 
   const handleDial = () => {
@@ -101,7 +103,7 @@ const Contact = () => {
           <section className="additional flex-1 text-black">
             <div className="call-us"  data-aos="zoom-in" 
                data-aos-duration="1500" data-aos-delay="700">
-              <a
+              <div
                 className="phone"
                 onClick={handleDial}
               >
@@ -112,20 +114,11 @@ const Contact = () => {
                 />{' '}
                 <strong>
                   PHONES<br></br>
-                  <span><a href={`tel:${phoneNumber}`}>+2519024635</a> <br></br><a href={`tel:${phoneNumber2}`}>+2519876543</a> </span>{' '}
+                  <span><a href={`tel:${phoneNumber}`}>+2519024635</a> <br></br>
+                  <a href={`tel:${phoneNumber2}`}>+251901962782</a> </span>{' '}
                 </strong>
-              </a>
-              <a className="phone">
-                <FontAwesomeIcon
-                  className="anchor"
-                  icon={faAddressCard}
-                  color="#4d4d4e"
-                />{' '}
-                <strong>
-                  ADDRESS<br></br>
-                  <span>CHURCHIL SRT 234 ,UI LI<br></br> BUILDING 2ND </span>
-                </strong>
-              </a>
+              </div>
+            
             </div>
 
             <div className="social-link" >
@@ -135,9 +128,9 @@ const Contact = () => {
               </a >
               <a href={linkdinUserName} className="social"  data-aos="zoom-in" 
                   data-aos-duration="1700" data-aos-delay="1100">
-                <FontAwesomeIcon className="linkf" icon={faFacebook} color="#"/>
+                <FontAwesomeIcon className="linkf" icon={faLinkedin} color="#"/>
               </a>
-              <a href={linkdinUserName} className="social"
+              <a href={whatsapplink} className="social"
                data-aos="zoom-in" 
                data-aos-duration="1900" data-aos-delay="1200">
                 <FontAwesomeIcon className="linkv" icon={faWhatsapp}color="#"/>

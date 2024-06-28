@@ -9,6 +9,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 function Hero() {
+  const telegramUserName = '@Mikyyetklyelij';
+  const telegramLink = `https://t.me/${telegramUserName}`;
+  const linkdinUserName = 'https://www.linkedin.com/in/mikyas-negash-01b400263';
+  const gitublink="https://github.com/dashboard";
+  const whatsapplink="https://wa.me/qr/3GK62EOD3WVQE1"
+
   return (
     <div id="hero " style={{background:"url(/images/banner.jpg)"}}
      className=" bg-cover overflow-hidden mt-[12vh] bg-center h-[160vh] md:h-[88vh] flex  justify-center items-center">
@@ -41,7 +47,7 @@ function Hero() {
             md:text-[16px] text-[10px]  font-bold uppercase bg-[#55e6a5] text-black hover:text-white flex 
             items-center  border border-[#55e6a5]  justify-between gap-5'>
              <MdFileDownload />
-             <a href="/Final.pdf" download> DOWNLOAD CV</a> </button>
+             <a href="/CV_2024-06-27-023035.pdf" download> DOWNLOAD CV</a> </button>
             <button  data-aos="zoom-in" 
                   data-aos-duration="2000" data-aos-delay="1000"
             id="hero" className='px-[1rem] sm:px-[2rem] hover:bg-[#55e6a5] transition-all duration-200 py-[0.5rem] sm:py-[1rem]
@@ -54,27 +60,31 @@ function Hero() {
                 </button>
           </div>
           <div className="social-links flex justify-start mt-[14px]  md:mt-[0.5rem] gap-5 items-center" >
-            <div   className=' text-[16px] flex justify-center text-[#0A66C2]  items-center border-solid 
+            <div   className=' text-[16px]  rounded-md flex justify-center text-[#0A66C2]  items-center border-solid 
             border-[#0A66C2] border-[2px] p-[4px] md:P-1  cursor-pointer  hover:opacity-[1]
              hover:scale-[1.2] transition-all duration-200 opacity-[0.5]'>
-            <FaLinkedin/>
+            <a href={linkdinUserName}><FaLinkedin/></a>
+           
             </div>
-           <div  className=' text-[16px] flex justify-center text-[orange] opacity-[0.5]  hover:opacity-[1] items-center border-solid 
+           <div  className=' text-[16px]  rounded-md flex justify-center text-[orange] opacity-[0.5]  hover:opacity-[1] items-center border-solid 
             border-[orange] border-[2px] p-[4px] md:P-1  cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
-              <FaGithub />
+             <a href={gitublink}> <FaGithub /></a>
+             
               </div>
-              <div  className=' text-[16px] flex justify-center text-[#0088CC] items-center border-solid 
+              <div  className=' text-[16px]  rounded-md flex justify-center text-[#0088CC] items-center border-solid 
             border-[#0088CC] border-[2px] opacity-[0.5]  hover:opacity-[1] p-[4px] md:P-1  cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
-              <FaTelegramPlane />
+              <a  href={telegramLink}> <FaTelegramPlane /></a>
+             
               </div>
-              <div  className=' text-[16px] flex justify-center text-[#25D366] items-center border-solid 
+              <div  className=' text-[16px]  rounded-md flex justify-center text-[#25D366] items-center border-solid 
             border-[#25D366] border-[2px] p-[4px]  hover:opacity-[1] opacity-[0.5] cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
-             <FaWhatsappSquare />
+              <a href={whatsapplink}> <FaWhatsappSquare /></a>
+            
               </div>
            
           </div>
       </div>
-      <div className="flex-1 relative  md:h-[70vh] h-[50vh] w-[70vw] " data-aos="zoom-in" 
+      <div className="flex-1 relative  md:h-[70vh] h-[50vh] w-[70vw]" data-aos="zoom-in" 
                   data-aos-duration="1500" data-aos-delay="1000">
         <Image 
         src='/images/u1.jpg'

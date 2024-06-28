@@ -15,7 +15,7 @@ export default function Home() {
     AOS.init({
       duration:1000,
       delay:200,
-      once:false
+      once:true
     })
   },[])
  

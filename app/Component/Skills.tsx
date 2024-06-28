@@ -13,7 +13,7 @@ function Skills() {
         <h1 className="bold text-[20px] md:text-[25px] "
           data-aos="zoom-in"  data-aos-duration="800" data-aos-delay="420">LETS EXPLORE POPULAR <br></br>
         SKILLS AND <span className='text-yellow-400'>EXPRIANCE</span> </h1>
-        <p className="text-[12px] opacity-[0.3]"   data-aos="zoom-in"  data-aos-duration="1500" data-aos-delay="440">
+        <p className="text-[12px] opacity-[0.5]"   data-aos="zoom-in"  data-aos-duration="1500" data-aos-delay="440">
         I am highly proficient with a range of modern web development tools and frameworks.
          This includes deep experience with GitHub for version control and collaboration,
          as well as expertise in React, Next.js, TypeScript, Tailwind CSS, JavaScript, and Jest.

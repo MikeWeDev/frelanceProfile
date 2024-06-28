@@ -11,27 +11,40 @@ function Projects() {
       <div className="flex flex-col justify-between w-[95%]  h-[80%] gap-10  ">
         {pictures.map((items,index)=>(
          <div className="flex md:flex-row flex-col  w-[100%] h-full justify-between items-center 
-         md:border-b-[4px] md:border-b-white p-2 gap-5 " key={index}
+         md:border-b-[4px] md:border-b-white border-white p-2 gap-5 " key={index}
          data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="500">
 
-         <div className="md:w-[50%] md:h-full w-[90%] h-[40%] flex items-center justify-center bg-[#12f7ff] relative 
-          rounded-lg">
+         <div className="md:w-[50%] md:h-full w-[90%] h-[40%]    relative
+          rounded-lg  p-0 m-0 border-[2px] border-red-500 flex justify-center items-center">
          
-           <div className="border-[2px] w-[80%]  z-10 text-black  h-full flex justify-center items-center flex-col">
-           <h1 className='text-white  md:text-[25px] text-[20px]'>{items.title}</h1>
-           <p className='text-white lg:text-[15px] md:text-[12px] text-[10px] mt-2 overflow-y-hidden opacity-[0.5]'>
+           <div className=" w-[100%] bg-[#12f7ff] p-5 z-10 md:hover:z-30 text-black  h-[100%] flex justify-center
+            items-center flex-col">
+           <h1 className='text-black  md:text-[25px] text-[20px]'>{items.title}</h1>
+           <p className='text-black lg:text-[15px] md:text-[12px] text-[10px] mt-2 overflow-y-hidden '>
            {items.desc}
           </p>
-              <button className='border-[2px] border-[#ED217C] text-[#ED217C] rounded-full  p-4 m-2 '>LINK</button>
+               <a href={items.links}  className='border-[3px] border-yellow-500 shadow-yellow-500 hover:shadow-2xl
+                 text-black font-bold   rounded-full  p-4 m-2 '>Link</a>
+             
            </div>
-
-         <Image
+          
+         <div className="md:hover:z-0  z-20 ">
+          <a href={items.links}>
+          <Image
          src={items.img}
          alt='user'
-         layout='fill'
          objectFit='contain'
-         className='w-[100vw] h-[100vh] absolute  z-20 object-contain hover:opacity-0 '
+         width="500"
+         height="250"
+         className='object-cover rounded-lg opacity-[1] md:hover:opacity-0
+          cursor-pointer w-[100%] h-[100%]  absolute left-0 right-0 top-0 bottom-0'
          />
+          </a>
+        
+         </div>
+         
+        
+        
          </div>
          <div className="flex flex-col justify-between items-center md:w-[50%] w-[90%] md:h-[90%] h-[60%] ">
           <h1 className='text-white  md:text-[25px] text-[20px]'>{items.title}</h1>
@@ -39,10 +52,14 @@ function Projects() {
            {items.desc}
           </p>
           <div className="btns flex justify-between gap-3 w-full flex-wrap pt-2" >
-            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2  bg-[#02A9EA] text-white md:p-1 p-0.5 rounded-md'>React</button>
-            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2 bg-white text-BLACK md:p-1 p-0.5 rounded-md'>React</button>
-            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2 bg-[#ED217C] text-white md:p-1 p-0.5 rounded-md'>React</button>
-            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2 bg-[#2541B2] text-white md:p-1 p-0.5 rounded-md'>React</button>
+            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2  bg-[#02A9EA] text-white md:p-1 p-0.5 rounded-md'>
+            {items.tech[0]}</button>
+            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2 bg-white text-BLACK md:p-1 p-0.5 rounded-md'>
+             {items.tech[1]}</button>
+            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2 bg-[#ED217C] text-white md:p-1 p-0.5 rounded-md'>
+             {items.tech[2]}</button>
+            <button className=' md:w-[20%] w-[40%] md:h-full h-1/2 bg-[#2541B2] text-white md:p-1 p-0.5 rounded-md'>
+             {items.tech[3]}</button>
           </div>
          </div>
        </div>
@@ -60,19 +77,25 @@ export default Projects
      title:"E-COMMERCE",
       desc:`This is an e-commerce website that is made by REACT.JS with  | tailwind css and | vanilla js
    that has all necessary functionality that most e-commerce website has on there user interface.`,
-    img:"/images/banner.jpg"
+   img:"/coloshop-free-bootstrap-ecommerce-website-templates.jpg",
+    links:"https://mike-ecommerce-web.netlify.app/",
+    tech:["React","JS","Tailwind","css"]
   },
   {
     title:"REAL-STATE",
-    img:"/images/banner.jpg"
-    ,
-    desc:"This is a real-state website that give all neccessary information about the campany and it is built by  REACT.JS with  | tailwind css and | vanilla js "
+    img:"/royalestate-free-real-estate-website-templates.jpg" ,
+    desc:`This is a real-state website that give all neccessary information about the campany and it is built by 
+     REACT.JS with  | tailwind css and | vanilla js `,
+     links:"https://mike-realstate-app.netlify.app/",
+      tech:["React","js","Tailwind","css"]
 
   },
   {
     title:"CAR-RENTAL",
     desc:`This is Car Rental website that is made by REACT.JS with  | tailwind css and | vanilla js
     that has all necessary functionality to show all info about the car dealership campany.`,
-    img:"/images/banner.jpg"
+    img:"/royalestate-free-real-estate-website-templates.jpg",
+    tech:["React","js","Tailwind","css"]
+
   },
  ]

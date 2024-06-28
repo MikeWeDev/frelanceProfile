@@ -34,10 +34,10 @@ function About() {
       <button  data-aos="zoom-in" 
                   data-aos-duration="1900" data-aos-delay="700"
             className='px-[1rem] sm:px-[2rem]  hover:bg-transparent transition-all duration-200 py-[0.5rem] sm:py-[1rem]
-            md:text-[16px] text-[10px] w-[80%] font-bold uppercase bg-[#55e6a5] text-black hover:text-white flex 
+            md:text-[16px] text-[10px] w-[65%] font-bold uppercase bg-[#55e6a5] text-black hover:text-white flex 
             items-center  border border-[#55e6a5]  justify-center gap-5'>
              <MdFileDownload />
-             <a href="/Final.pdf" download> DOWNLOAD CV</a> </button>
+             <a href="/CV_2024-06-27-023035.pdf" download> DOWNLOAD CV</a> </button>
 
         </div>
         <div className="md:w-[300px] md:h-[300px] md:mx-[2rem]

@@ -11,9 +11,8 @@ function Services() {
         <p className="text-white opacity-[0.6] md:text-[16px] text-[12px] pb-2 w-[80%]"
          data-aos="zoom-in" 
         data-aos-duration="600" data-aos-delay="500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, est.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, est.
-          Lorem ipsum dolor sit amet, consectetur
+          HEY, as a talented frontend devloper i will provide quality web expriance and efficent websites by using React.js ,
+          Next.js and additionaly i will provide Testing by react testing software called Jest.
           </p>
 
         <div className="con md:h-[50%] h-[80%]  w-[95%] border-2px border-yellow-400 flex md:flex-row flex-col
@@ -52,22 +51,22 @@ const data=[
   {
     title:"React.js dev",
     icons:< FaReact color="#5ED4F4" />,
-    discription:` Lorem ipsum, dolor sit amet consectetur4   Lorem ipsum, dolor sit amet consectetur4  Lorem ipsum,
-     dolor sit amet consectetur4`,
+    discription:`AS a react.js dev i will give all the advatage react.js gives like efficency,simplcity and a good documentation with 
+    reusable components for later use.`,
     button:"reacd more"
   },
   {
     title:"Next.js dev",
     icons:<RiNextjsFill  color='#00000' />,
-    discription:` Lorem ipsum, dolor sit amet consectetur4  Lorem ipsum, dolor sit amet consectetur4 
-     Lorem ipsum, dolor sit amet consectetur4` ,
+    discription:`AS a Next.js dev i will give all new feature next.js come with which is optimazing performance by diffrent ways 
+    also helps to better SEO optimezation ` ,
     button:"reacd more"
   },
   {
     title:"Test With Jest",
     icons:<SiJest />,
-    discription:` Lorem ipsum, dolor sit amet consectetur4  Lorem ipsum, dolor sit amet consectetur4 
-     Lorem ipsum, dolor sit amet consectetur4`,
+    discription:`As a jest tester i will make sure the code that is written i react or next doesn't have a bugs or even if that
+    code is written in a way to perform better`,
     button:"reacd more"
   }
 ];

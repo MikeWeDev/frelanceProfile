@@ -9,9 +9,13 @@ const Contact = () => {
   const telegramUserName = '@Mikyyetklyelij';
   const linkdinUserName = 'https://www.linkedin.com/in/mikyas-negash-01b400263';
   const phoneNumber = '0902464535';
+  const phoneNumber2 = '0901962782';
+
 
   const handleDial = () => {
     window.location.href = `tel:${phoneNumber}`;
+    window.location.href = `tel:${phoneNumber2}`;
+
   };
 
   const telegramLink = `https://t.me/${telegramUserName}`;
@@ -98,7 +102,6 @@ const Contact = () => {
             <div className="call-us"  data-aos="zoom-in" 
                data-aos-duration="1500" data-aos-delay="700">
               <a
-                href={`tel:${phoneNumber}`}
                 className="phone"
                 onClick={handleDial}
               >
@@ -109,7 +112,7 @@ const Contact = () => {
                 />{' '}
                 <strong>
                   PHONES<br></br>
-                  <span> +2519024635<br></br>+2519876543 </span>{' '}
+                  <span><a href={`tel:${phoneNumber}`}>+2519024635</a> <br></br><a href={`tel:${phoneNumber2}`}>+2519876543</a> </span>{' '}
                 </strong>
               </a>
               <a className="phone">

@@ -5,11 +5,11 @@ const  ExampleComponent = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'next/React dev',
+        'NEXT.JS DEVLOPER',
        1500, // wait 1s before replacing "Mice" with "Hamsters"
-        'Wordpress/php',
+        'REACT.JS DEVELOPER',
        1500,
-       'Testing With Jest',
+       'TESTING WITH JEST',
        1500,
       ]}
       speed={60}

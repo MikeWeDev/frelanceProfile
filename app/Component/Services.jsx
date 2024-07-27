@@ -1,4 +1,4 @@
-import './Style/index.css'
+import './Style/index.scss'
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiJest } from "react-icons/si";

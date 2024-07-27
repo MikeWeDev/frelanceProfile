@@ -84,13 +84,13 @@ function Hero() {
            
           </div>
       </div>
-      <div className="flex-1 relative  md:h-[70vh] h-[40vh] w-[50vw]" data-aos="zoom-in" 
+      <div className="flex-1 relative  md:h-[80vh] h-[40vh] md:w-[50vw] w-[65vw]" data-aos="zoom-in" 
                   data-aos-duration="1500" data-aos-delay="1000">
         <Image 
         src='/images/u1.jpg'
         alt='user'
         layout='fill'
-        className='rounded-full h-[80%] md:h-[100%] ' />
+        className='rounded-full h-[80%] md:h-[90%] ' />
       </div>
      </div>
     </div>

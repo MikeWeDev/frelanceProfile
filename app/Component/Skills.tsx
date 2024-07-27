@@ -1,4 +1,4 @@
-import './Style/index.css'
+import './Style/index.scss'
 import {  faCss3, faGitAlt, faHtml5, faJsSquare, faReact, faTypo3 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

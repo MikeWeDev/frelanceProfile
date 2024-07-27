@@ -84,7 +84,7 @@ function Hero() {
            
           </div>
       </div>
-      <div className="flex-1 relative  md:h-[70vh] h-[50vh] w-[70vw]" data-aos="zoom-in" 
+      <div className="flex-1 relative  md:h-[70vh] h-[40vh] w-[50vw]" data-aos="zoom-in" 
                   data-aos-duration="1500" data-aos-delay="1000">
         <Image 
         src='/images/u1.jpg'

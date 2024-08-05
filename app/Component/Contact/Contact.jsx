@@ -60,7 +60,7 @@ const Contact = () => {
         <p className="text-white"
          data-aos="zoom-in" 
          data-aos-duration="1000" data-aos-delay="500">
-          IF YOU WANT TO CONTACT US. USE THE FOLLOWING ADDRESSES
+          IF YOU WANT TO CONTACT ME. PLEASE USE THE FOLLOWING ADDRESSES
         </p>
 
         <div className="contact-form">
@@ -114,7 +114,7 @@ const Contact = () => {
                 />{' '}
                 <strong>
                   PHONES<br></br>
-                  <span><a href={`tel:${phoneNumber}`}>+2519024635</a> <br></br>
+                  <span><a href={`tel:${phoneNumber}`}>+251902464535</a> <br></br>
                   <a href={`tel:${phoneNumber2}`}>+251901962782</a> </span>{' '}
                 </strong>
               </div>

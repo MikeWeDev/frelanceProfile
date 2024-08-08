@@ -11,7 +11,7 @@ import Contact from './Component/Contact/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 export default function Home() {
-  useEffect(()=>{
+ useEffect(()=>{
     AOS.init({
       duration:1000,
       delay:200,

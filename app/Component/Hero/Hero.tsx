@@ -16,24 +16,22 @@ function Hero() {
   const whatsapplink="https://wa.me/qr/3GK62EOD3WVQE1"
 
   return (
-    <div id="hero " style={{background:"url(/images/banner.jpg)"}}
+    <div  style={{background:"url(/images/banner.jpg)"}}>
+  <div id="hero "   data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="400"
      className=" bg-cover overflow-hidden mt-[12vh] bg-center h-[160vh] md:h-[88vh] flex  justify-center items-center">
       <Particle   />
      <div className="con flex md:flex-row flex-col justify-center
      w-[95%] items-center h-[80%] lg:h-auto gap-2 ">
       
       <div className="text ml-[20px] md:ml-2  text-white
-       flex flex-col flex-1   gap-y-5 "  data-aos="zoom-in" 
-                  data-aos-duration="1000" data-aos-delay="400" >
-        <h1 className='text-bold text-[40px] font-serif ' data-aos="zoom-in" 
-                  data-aos-duration="1300" data-aos-delay="600">HY , I AM
+       flex flex-col flex-1   gap-y-5 " >
+        <h1 className='text-bold text-[40px] font-serif ' >HY , I AM
          <span className='text-yellow-400' > MIKE</span></h1>
-        <h2 className='textarea '  data-aos="zoom-in" 
-                  data-aos-duration="1500" data-aos-delay="700">
+        <h2 className='textarea '>
         <ExampleComponent />
           </h2>
-        <p className='text-[11px] md:text-[15px] opacity-[0.4] text-[#ffffff92]'
-         data-aos="zoom-in"  data-aos-duration="1700" data-aos-delay="700">
+      
+        <p className='text-[11px] md:text-[15px] opacity-[0.4] text-[#ffffff92]'>
                Passionate Front-end Web Devloper . I specialize in utilizing the following tech stacks:
                Next.js | React.js | Typescript | Tailiwind css And Jest For Testing . Transforming Ideas Into 
                Seamless Web Expriance .
@@ -41,22 +39,18 @@ function Hero() {
                  </p>
           <div className="flex justify-start gap-10 items-center 
           ">
-            <button  data-aos="zoom-in" 
-                  data-aos-duration="1900" data-aos-delay="800"
+            <button  
             className='px-[1rem] sm:px-[2rem]  hover:bg-transparent transition-all duration-200 py-[0.5rem] sm:py-[1rem]
             md:text-[16px] text-[10px]  font-bold uppercase bg-[#55e6a5] text-black hover:text-white flex 
             items-center  border border-[#55e6a5]  justify-between gap-5'>
              <MdFileDownload />
              <a href="/CV_2024-06-27-023035.pdf" download> DOWNLOAD CV</a> </button>
-            <button  data-aos="zoom-in" 
-                  data-aos-duration="2000" data-aos-delay="1000"
+            <button  
             id="hero" className='px-[1rem] sm:px-[2rem] hover:bg-[#55e6a5] transition-all duration-200 py-[0.5rem] sm:py-[1rem]
              md:text-[16px] text-[10px] font-bold uppercase animate-ease border-solid border-[#55e6a5] border-[2px] bg-transparent
              hover:text-black text-white  flex items-center  hover:scale-95'>
              <Link to="contact" spy={true} 
-               smooth={true} 
-               duration={500}
-               >CONTACT ME</Link> 
+               smooth={true} >CONTACT ME</Link> 
                 </button>
           </div>
           <div className="social-links flex justify-start mt-[14px]  md:mt-[0.5rem] gap-5 items-center" >
@@ -84,8 +78,8 @@ function Hero() {
            
           </div>
       </div>
-      <div className="flex-1 relative  md:h-[80vh] h-[40vh] md:w-[50vw] w-[65vw]" data-aos="zoom-in" 
-                  data-aos-duration="1500" data-aos-delay="1000">
+     
+     <div className="flex-1 relative  md:h-[80vh] h-[40vh] md:w-[50vw] w-[65vw]">
         <Image 
         src='/images/u1.jpg'
         alt='user'
@@ -94,6 +88,8 @@ function Hero() {
       </div>
      </div>
     </div>
+    </div>
+   
 
   )
 }

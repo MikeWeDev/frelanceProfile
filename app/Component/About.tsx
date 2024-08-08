@@ -7,12 +7,13 @@ function About() {
     setClick(1);
   }
   return (
-    <div className='bg-[#121121]  h-[100vh]
-     flex justify-center items-center'  id="about" onClick={handleclick}>
+    <div className='bg-[#121121]'>
+     <div className='  h-[100vh]
+     flex justify-center items-center'  id="about" onClick={handleclick}  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
      
       <div className="flex flex-col gap-[6rem] md:gap-0 justify-between md:flex-row w-[80%] items-center">
         <div className="text flex-1 flex flex-col gap-5 "
-         data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
+        >
       <h1 className='text-[25px] font-bold uppercase text-[#55e6a5] mb-[1rem] '>
         About me</h1>
       <h2 className='uppercase text-[15px] md:text-[20px] lg:text-[25px] md:leading-[3rem]
@@ -31,9 +32,7 @@ function About() {
       </p>
       </div>
      
-      <button  data-aos="zoom-in" 
-                  data-aos-duration="1900" data-aos-delay="700"
-            className='px-[1rem] sm:px-[2rem]  hover:bg-transparent transition-all duration-200 py-[0.5rem] sm:py-[1rem]
+      <button  className='px-[1rem] sm:px-[2rem]  hover:bg-transparent transition-all duration-200 py-[0.5rem] sm:py-[1rem]
             md:text-[16px] text-[10px] w-[65%] font-bold uppercase bg-[#55e6a5] text-black hover:text-white flex 
             items-center  border border-[#55e6a5]  justify-center gap-5'>
              <MdFileDownload />
@@ -41,8 +40,7 @@ function About() {
 
         </div>
         <div className="md:w-[300px] md:h-[300px] md:mx-[2rem]
-         md:mt-2  w-[250px] h-[250px] relative "
-         data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1000">
+         md:mt-2  w-[250px] h-[250px] relative ">
         <Image 
         src='/images/about.jpg'
         alt='user'
@@ -53,6 +51,8 @@ function About() {
         </div>
       </div>
     </div>
+    </div>
+  
   )
 }
 

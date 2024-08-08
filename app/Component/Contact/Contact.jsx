@@ -44,11 +44,12 @@ const Contact = () => {
   };
 
   return (
-    <div  id="contact" className="containerC flex justify-between contact-page">
+    <div className="containerC">
+      <div  id="contact" className=" flex justify-between contact-page"  data-aos="zoom-in" 
+    data-aos-duration="1000" data-aos-delay="400">
       <div className="text-zone">
         <h1 className="h1 text-white"
-         data-aos="zoom-in" 
-         data-aos-duration="1000" data-aos-delay="400">
+        >
           {letters.map((i, index) => {
             return (
               <span key={index}  className="father">
@@ -57,18 +58,14 @@ const Contact = () => {
             );
           })}
         </h1>
-        <p className="text-white"
-         data-aos="zoom-in" 
-         data-aos-duration="1000" data-aos-delay="500">
+        <p className="text-white">
           IF YOU WANT TO CONTACT ME. PLEASE USE THE FOLLOWING ADDRESSES
         </p>
 
         <div className="contact-form">
           <form ref={form} onSubmit={sendEmail} className="flex-2 text-black ">
             <ul>
-              <li className="half text-black"
-               data-aos="zoom-in" 
-               data-aos-duration="1100" data-aos-delay="600">
+              <li className="half text-black">
                 <input
                   type="text"
                   className="text"
@@ -77,9 +74,7 @@ const Contact = () => {
                   placeholder="Name"
                 />
               </li>
-              <li className="half text-black"
-               data-aos="zoom-in" 
-               data-aos-duration="1200" data-aos-delay="600">
+              <li className="half text-black">
                 <input
                   type="text"
                   className="text"
@@ -89,8 +84,7 @@ const Contact = () => {
                   required
                 />
               </li>
-              <li data-aos="zoom-in" 
-                  data-aos-duration="1400" data-aos-delay="600">
+              <li>
                 <textarea
                   name="message"
                   placeholder="Message"
@@ -101,8 +95,7 @@ const Contact = () => {
           </form>
 
           <section className="additional flex-1 text-black">
-            <div className="call-us"  data-aos="zoom-in" 
-               data-aos-duration="1500" data-aos-delay="700">
+            <div className="call-us">
               <div
                 className="phone"
                 onClick={handleDial}
@@ -122,17 +115,13 @@ const Contact = () => {
             </div>
 
             <div className="social-link" >
-              <a href={telegramLink} className="social"  data-aos="zoom-in" 
-                  data-aos-duration="1500" data-aos-delay="1000">
+              <a href={telegramLink} className="social">
                 <FontAwesomeIcon className="linkt" icon={faTelegram} color="#" />
               </a >
-              <a href={linkdinUserName} className="social"  data-aos="zoom-in" 
-                  data-aos-duration="1700" data-aos-delay="1100">
+              <a href={linkdinUserName} className="social" >
                 <FontAwesomeIcon className="linkf" icon={faLinkedin} color="#"/>
               </a>
-              <a href={whatsapplink} className="social"
-               data-aos="zoom-in" 
-               data-aos-duration="1900" data-aos-delay="1200">
+              <a href={whatsapplink} className="social">
                 <FontAwesomeIcon className="linkv" icon={faWhatsapp}color="#"/>
               </a>
             </div>
@@ -140,6 +129,8 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </div>
+   
   );
 };
 

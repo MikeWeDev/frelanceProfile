@@ -1,0 +1,28 @@
+.heading{
+            font-size:53px;
+            font-family:'Coolvetica';
+            font-weight: 400;
+            position: relative;
+            display:flex;
+            margin:20px 40px;
+
+           
+        }
+      
+    
+.father:hover{
+      cursor: pointer;
+      color: hsl(204, 91%, 53%);
+      animation: fadeIn 1s forwards ;
+    
+    }
+
+ .paragraph{
+      font-size:15px;
+      font-family:sans-serif;
+      font-weight: 100;
+      min-width:fit-content;
+      line-height:20px;
+      margin:20px 40px;
+     
+  }

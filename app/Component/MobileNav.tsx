@@ -60,9 +60,9 @@ function MobileNav({nav,closeNav}:props) {
              onClick={closeNav} >Contact</Link></div>
            
             <div className="w-[2rem] absolute
-             top-[2rem] right-[2rem]   h-[2rem] cursor-pointer text-yellow-300" 
+             top-[2rem] right-[2rem]   h-[2rem] cursor-pointer text-black" 
            onClick={closeNav} >
-               <CgCloseR className='text-[25px]' />
+               <CgCloseR className='text-[25px] text-yellow-500' />
               </div>
       </div>
     </div>

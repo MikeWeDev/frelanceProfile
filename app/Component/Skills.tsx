@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Skills() {
   return (
-    <div className='bg-[#25283D]'>
+    <div className='bg-[#121121]'>
   <div id='skill' className=' p-2 h-[160vh] md:h-[100vh] flex items-center justify-center '   data-aos="zoom-in"  data-aos-duration="700" data-aos-delay="400">
        <div className="con flex flex-col  md:flex-row justtify-between items-center w-[90%] h-[90%] text-white">
        
         <div className="text flex-1 flex flex-col gap-7">
         <h3 className="font-semi-bold text-[25px] text-yellow-400 uppercase"
         >my skills</h3>
-        <h1 className="bold text-[20px] md:text-[25px]">LETS EXPLORE POPULAR <br></br>
+        <h1 className="bold text-white text-[20px] md:text-[25px]">LETS EXPLORE POPULAR <br></br>
         SKILLS AND <span className='text-yellow-400'>EXPRIANCE</span> </h1>
         <p className="text-[12px] opacity-[0.5]" >
         I am highly proficient with a range of modern web development tools and frameworks.
@@ -22,7 +22,7 @@ function Skills() {
        <button  
         className="w-[50%] h-[24px] md:w-[40%] transition-all duration-200 py-6 hover:bg-yellow-400 border-none text-black flex justify-center items-center bg-[#55e6a5] border-[2px] text-[15px] uppercase font-bold ">LEARN MORE</button>
         </div>
-        <div className="icon flex-1  ">
+        <div className="icon flex-1 mt-5 ">
         <div className="stage-cube-cont md:mt-[-100px] mt-[60px]" >
             <div className="cube-spiner">
             <div className="cube-spiner">

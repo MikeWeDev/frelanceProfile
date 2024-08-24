@@ -5,23 +5,23 @@
 @layer components {
   
     .nav-link{
-        @apply relative  font-semibold text-white cursor-pointer text-[16px] w-fit 
+        @apply relative  font-semibold text-black cursor-pointer text-[16px] w-fit 
         md:block after:block after:content-['']  after:h-[3px]
-         after:bg-[#55e6a5]
+         after:bg-[#3e64ff]
         after:w-full
         after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 
         after:origin-center 
     }
     .active{
         @apply  after:block after:content-['']  after:h-[3px]
-        after:bg-[#55e6a5] 
+        after:bg-[#3e64ff]
        after:w-full
         after:scale-x-100 after:transition after:duration-300 
        after:origin-center
     }
     .nav-link-mobile{
         @apply relative mb-3  font-semibold text-white cursor-pointer text-[24px] w-fit 
-        md:block after:block after:content-['']  after:h-[3px] after:bg-[#55e6a5]
+        md:block after:block after:content-['']  after:h-[3px] after:bg-[#3e64ff]
         after:w-full
         after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 
         after:origin-center 

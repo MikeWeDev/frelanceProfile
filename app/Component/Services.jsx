@@ -20,18 +20,19 @@ function Services() {
           <div key={index} className="box  md:w-[30%] w-[70%]  h-[100%] bg-black flex 
           flex-col justify-between items-center 
         ">
-          <div className=" text-white md:text-[25px] text-[18px]  w-full h-[40%] flex items-center
+          <div className=" text-white md:text-[23px] text-[18px]  w-full h-[40%] flex items-center
            justify-center gap-5 z-10">
             <div className=""> {item.icons}</div>
             <div className=""> {item.title}</div>
           </div>
-          <div className=" text-white md:text-[80%] text-[70%]  opacity-[0.5] pl-2 w-[90%]
+          <div className=" text-white md:text-[70%] text-[70%]  opacity-[0.5] pl-2 w-[90%]
            h-[40%]  z-10">
           {item.discription}
           </div>
+         
           <div className="z-10 text-white text-[20px]  w-full h-[20%] flex items-center justify-center">
           <button className='px-[1rem] sm:px-[2rem] hover:bg-[#55e6a5] transition-all duration-200 py-[0.5rem] sm:py-[1rem]
-             md:text-[14px] text-[12px] font-bold uppercase animate-ease border-solid border-[#55e6a5] border-[2px] bg-transparent
+             md:text-[14px] text-[10px] font-bold uppercase animate-ease border-solid border-[#55e6a5] border-[2px] bg-transparent
              hover:text-black text-white  flex items-center  hover:scale-95'>
               LEARN MORE</button>
           </div>

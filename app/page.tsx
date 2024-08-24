@@ -10,6 +10,7 @@ import Projects from './Component/Projects';
 import Contact from './Component/Contact/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import Contact2 from './Component/Contact/index'
 export default function Home() {
  useEffect(()=>{
     AOS.init({
@@ -33,7 +34,8 @@ export default function Home() {
     <Skills />
     <Services />
     <Projects />
-    <Contact />
+     {/*--<Contact />-- */} 
+    <Contact2 />
     </div>
   ); 
 }

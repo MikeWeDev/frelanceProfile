@@ -16,62 +16,62 @@ function Hero() {
   const whatsapplink="https://wa.me/qr/3GK62EOD3WVQE1"
 
   return (
-    <div  style={{background:"url(/images/banner.jpg)"}}>
+    <div  /* style={{background:"url(/images/banner.jpg)"}} */ >
   <div id="hero "   data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="400"
-     className=" bg-cover overflow-hidden mt-[12vh] bg-center h-[160vh] md:h-[88vh] flex  justify-center items-center">
-      <Particle   />
-     <div className="con flex md:flex-row flex-col justify-center
-     w-[95%] items-center h-[80%] lg:h-auto gap-2 ">
+     className=" bg-cover bg-white overflow-hidden mt-[20vh] lg:mt-[12vh] bg-center h-[150vh] lg:h-[88vh] flex  justify-center items-center">
+       {/*- <Particle   />-*/} 
+     <div className="con mt-10 flex lg:flex-row flex-col justify-center
+     w-[95%] items-center h-[90%] lg:h-auto gap-3 ">
       
-      <div className="text ml-[20px] md:ml-2  text-white
-       flex flex-col flex-1   gap-y-5 " >
+      <div className="ml-[20px] lg:ml-2  text-black
+       flex flex-col flex-1  gap-y-5  " >
         <h1 className='text-bold text-[40px] font-serif ' >HY , I AM
-         <span className='text-yellow-400' > MIKE</span></h1>
+         <span className='text-[#3e64ff]' > MIKE</span></h1>
         <h2 className='textarea '>
         <ExampleComponent />
           </h2>
       
-        <p className='text-[11px] md:text-[15px] opacity-[0.4] text-[#ffffff92]'>
+        <p className='text-[11px] lg:text-[15px] font-bold  font-serif  text-black'>
                Passionate Front-end Web Devloper . I specialize in utilizing the following tech stacks:
                Next.js | React.js | Typescript | Tailiwind css And Jest For Testing . Transforming Ideas Into 
-               Seamless Web Expriance .
+               Seamless Web Expriance.
              
                  </p>
           <div className="flex justify-start gap-10 items-center 
           ">
             <button  
             className='px-[1rem] sm:px-[2rem]  hover:bg-transparent transition-all duration-200 py-[0.5rem] sm:py-[1rem]
-            md:text-[16px] text-[10px]  font-bold uppercase bg-[#55e6a5] text-black hover:text-white flex 
-            items-center  border border-[#55e6a5]  justify-between gap-5'>
+            lg:text-[16px] text-[10px]  font-bold uppercase bg-[#3e64ff] text-white hover:text-black rounded-xl  flex 
+            items-center  border-[2px] border-[#3e64ff]  justify-between gap-5 hover:scale-95'>
              <MdFileDownload />
-             <a href="/CV_2024-06-27-023035.pdf" download> DOWNLOAD CV</a> </button>
+             <a href="/updated-cv.pdf" download> DOWNLOAD CV</a> </button>
             <button  
-            id="hero" className='px-[1rem] sm:px-[2rem] hover:bg-[#55e6a5] transition-all duration-200 py-[0.5rem] sm:py-[1rem]
-             md:text-[16px] text-[10px] font-bold uppercase animate-ease border-solid border-[#55e6a5] border-[2px] bg-transparent
-             hover:text-black text-white  flex items-center  hover:scale-95'>
+            id="hero" className='px-[1rem] sm:px-[2rem] hover:bg-[#3e64ff] rounded-xl transition-all duration-200 py-[0.5rem] sm:py-[1rem]
+             lg:text-[16px] text-[10px] font-bold uppercase animate-ease border-solid border-[#3e64ff] border-[2px] bg-transparent
+             hover:text-white text-black  flex items-center  hover:scale-95'>
              <Link to="contact" spy={true} 
                smooth={true} >CONTACT ME</Link> 
                 </button>
           </div>
-          <div className="social-links flex justify-start mt-[14px]  md:mt-[0.5rem] gap-5 items-center" >
-            <div   className=' text-[16px]  rounded-md flex justify-center text-[#0A66C2]  items-center border-solid 
-            border-[#0A66C2] border-[2px] p-[4px] md:P-1  cursor-pointer  hover:opacity-[1]
-             hover:scale-[1.2] transition-all duration-200 opacity-[0.5]'>
+          <div className="social-links flex justify-start mt-[14px]  lg:mt-[0.5rem] gap-5 items-center" >
+            <div   className=' text-[16px]  rounded-lg flex justify-center text-[#0A66C2]  items-center border-solid 
+            border-[#0A66C2] border-[2px] p-[4px] lg:P-1  cursor-pointer  
+             hover:scale-[1.2] transition-all duration-200 '>
             <a href={linkdinUserName}><FaLinkedin/></a>
            
             </div>
-           <div  className=' text-[16px]  rounded-md flex justify-center text-[orange] opacity-[0.5]  hover:opacity-[1] items-center border-solid 
-            border-[orange] border-[2px] p-[4px] md:P-1  cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
+           <div  className=' text-[16px]  rounded-lg flex justify-center text-[orange]    items-center border-solid 
+            border-[orange] border-[2px] p-[4px] lg:P-1  cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
              <a href={gitublink}> <FaGithub /></a>
              
               </div>
-              <div  className=' text-[16px]  rounded-md flex justify-center text-[#0088CC] items-center border-solid 
-            border-[#0088CC] border-[2px] opacity-[0.5]  hover:opacity-[1] p-[4px] md:P-1  cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
+              <div  className=' text-[16px]  rounded-lg flex justify-center text-[#0088CC] items-center border-solid 
+            border-[#0088CC] border-[2px]    p-[4px] lg:P-1  cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
               <a  href={telegramLink}> <FaTelegramPlane /></a>
              
               </div>
-              <div  className=' text-[16px]  rounded-md flex justify-center text-[#25D366] items-center border-solid 
-            border-[#25D366] border-[2px] p-[4px]  hover:opacity-[1] opacity-[0.5] cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
+              <div  className=' text-[16px]  rounded-lg flex justify-center text-[#25D366] items-center border-solid 
+            border-[#25D366] border-[2px] p-[4px]    cursor-pointer  hover:scale-[1.2] transition-all duration-200'>
               <a href={whatsapplink}> <FaWhatsappSquare /></a>
             
               </div>
@@ -79,12 +79,12 @@ function Hero() {
           </div>
       </div>
      
-     <div className="flex-1 relative  md:h-[80vh] h-[40vh] md:w-[50vw] w-[65vw]">
+     <div className="flex-1 relative  lg:h-[80vh] h-[70vh] lg:w-[50vw] w-[85vw] mt-3 lg:mt-0">
         <Image 
-        src='/images/u1.jpg'
+        src='/home-right.png'
         alt='user'
         layout='fill'
-        className='rounded-full h-[80%] md:h-[90%] ' />
+        className='rounded-full h-[100%] lg:h-[90%] ' />
       </div>
      </div>
     </div>

@@ -13,7 +13,7 @@ function Projects() {
          <div className="flex md:flex-row flex-col  w-[100%] h-full justify-between items-center 
          md:border-b-[4px] md:border-b-white border-white p-2 gap-5 " key={index}>
 
-         <div className="md:w-[50%] md:h-full w-[90%] h-[40%]    relative
+         <div className="md:w-[50%] md:h-full w-[95%] h-[50%]    relative
           rounded-lg  p-0 m-0 border-[2px] border-red-500 flex justify-center items-center">
          
            <div className=" w-[100%] bg-[#12f7ff] p-5 z-10 md:hover:z-30 text-black  h-[100%] flex justify-center
@@ -45,7 +45,7 @@ function Projects() {
         
         
          </div>
-         <div className="flex flex-col justify-between items-center md:w-[50%] w-[90%] md:h-[90%] h-[60%] ">
+         <div className="flex flex-col justify-between items-center md:w-[50%] w-[90%] md:h-[90%] h-[40%] ">
           <h1 className='text-white  md:text-[25px] text-[20px]'>{items.title}</h1>
           <p className='text-white lg:text-[15px] md:text-[12px] text-[10px] overflow-y-hidden opacity-[0.5]'>
            {items.desc}
@@ -91,12 +91,5 @@ export default Projects
       tech:["React","js","Tailwind","css"]
 
   },
-  {
-    title:"CAR-RENTAL",
-    desc:`This is Car Rental website that is made by REACT.JS with  | tailwind css and | vanilla js
-    that has all necessary functionality to show all info about the car dealership campany.`,
-    img:"/royalestate-free-real-estate-website-templates.jpg",
-    tech:["React","js","Tailwind","css"]
-
-  },
+ 
  ]

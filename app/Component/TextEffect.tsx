@@ -13,7 +13,7 @@ const  ExampleComponent = () => {
        1500,
       ]}
       speed={60}
-      className='text-[20px] md:text-[30px] text-[#55e6a5] font-bold uppercase'      
+      className='text-[20px] md:text-[30px] text-[#3e64ff] font-bold uppercase'      
       repeat={Infinity}
     />
   );

@@ -2,7 +2,7 @@ import Image from 'next/image'
 function Projects() {
   return (
     <div className='bg-[#172A3A]'>
-    <div id="project" className='flex  flex-col items-center md:h-[160vh] h-[300vh]  p-5'   data-aos="zoom-in" 
+    <div id="project" className='flex  flex-col items-center md:h-[190vh] h-[300vh]  p-5'   data-aos="zoom-in" 
     data-aos-duration="800" data-aos-delay="400">
       <h1 className='text-[12px] text-white uppercase py-5'
       >lates projects</h1>

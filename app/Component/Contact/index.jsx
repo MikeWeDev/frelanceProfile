@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import './contact2.css'
 import  { useRef } from 'react';
@@ -43,11 +44,11 @@ function Contact2(){
    
     <div className="flex justify-center items-center w-[100vw] h-[85vh] md:h-[100vh] md:mb-5 ">
    
-    <div className=" flex md:justify-center mt-10 md:mt-0 justify-start items-start  md:flex-row  md:items-center w-[90%] h-[100%] md:gap-x-5 ">
+    <div className=" flex justify-center mt-10 md:mt-0   md:flex-row  items-start md:items-center w-[90%] h-[100%] md:gap-x-5 ">
        
          <div className="relative w-full h-[90%] flex-1  hidden md:block ">
           <Image
-           src="/about.jpg"
+           src="/photo_2024-08-25_15-36-15.jpg"
            alt="user"
            layout="fill"
            className="absolute top-0 bottom-0 right-0 left-0  "
@@ -61,10 +62,10 @@ function Contact2(){
                  <input type="text" className=" w-full  p-2" placeholder="Your Name" />
                </div>
                <div className=" w-full border-black border">
-                 <input type="text" className="w-full  p-2" placeholder="Your Email" />
+                 <input type="text" className="w-full  p-2" placeholder="Your Email" required />
                </div>
                <div className=" w-full border border-black">
-                 <input type="text" className="w-full p-2" placeholder="Subject" />
+                 <input type="text" className="w-full p-2" placeholder="Subject"  />
                </div>
                <div className=" w-full border border-black ">
                  <textarea name="" id="" cols="  w-full m-2 p-2" rows="7" className="w-full p-2" placeholder="Message"></textarea>

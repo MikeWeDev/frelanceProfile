@@ -25,7 +25,7 @@ function Services() {
             <div className=""> {item.icons}</div>
             <div className=""> {item.title}</div>
           </div>
-          <div className=" text-white   opacity-[0.5] pl-2 w-[90%]
+          <div className=" text-white md:text-[90%]  text-[80%]  opacity-[0.5] pl-2 w-[90%]
            h-[40%]  z-10">
           {item.discription}
           </div>

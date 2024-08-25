@@ -37,16 +37,25 @@
         font-size:30px;
        
       }
+      .linkt:hover{
+        transform: scale(1.2);
+      }
       .linkf{
         color:#1877F2;
         font-size:30px;
        
+      }
+      .linkf:hover{
+        transform: scale(1.2);
       }
       .linkv{
         color:#25D366;
         font-size:30px;
         opacity:1;
        
+      }
+      .linkv:hover{
+        transform: scale(1.2);
       }
     }
   }

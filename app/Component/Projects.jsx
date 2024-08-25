@@ -8,7 +8,9 @@ function Projects() {
       >lates projects</h1>
       <h2 className='py-8 md:text-[30px] text-[23px]  text-white'
        >MY BEST <span className="text-yellow-400">PROJECT</span> </h2>
-      <div className="flex flex-col justify-between w-[95%]  h-[80%] gap-10  ">
+   
+      <div className="flex flex-col justify-between w-[95%]  h-[80%] gap-7  ">
+      
         {pictures.map((items,index)=>(
          <div className="flex md:flex-row flex-col  w-[100%] h-full justify-between items-center 
          md:border-b-[4px] md:border-b-white border-white p-2 gap-5 " key={index}>
@@ -17,7 +19,7 @@ function Projects() {
           rounded-lg  p-0 m-0 border-[2px] border-red-500 flex justify-center items-center">
          
            <div className=" w-[100%] bg-[#12f7ff] p-5 z-10 md:hover:z-30 text-black  h-[100%] flex justify-center
-            items-center flex-col">
+            items-center flex-col rounded-lg">
            <h1 className='text-black  md:text-[25px] text-[20px]'>{items.title}</h1>
            <p className='text-black lg:text-[15px] md:text-[12px] text-[10px] mt-2 overflow-y-hidden '>
            {items.desc}
@@ -91,5 +93,14 @@ export default Projects
       tech:["React","js","Tailwind","css"]
 
   },
+  {
+    title:"REAL-STATE",
+    img:"/royalestate-free-real-estate-website-templates.jpg" ,
+    desc:`This is a real-state website that give all neccessary information about the campany and it is built by 
+     REACT.JS with  | tailwind css and | vanilla js `,
+     links:"https://mike-realstate-app.netlify.app/",
+      tech:["React","js","Tailwind","css"]
+
+  }
  
  ]

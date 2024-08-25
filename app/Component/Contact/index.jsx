@@ -5,12 +5,13 @@ import emailjs from '@emailjs/browser';
 function Contact2(){
   const letters = ['S', 'A', 'Y', '-', 'H', 'Y']
   const form = useRef();
+ 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm('service_uk7hzdl', 'template_0fnzi45', form.current, {
         publicKey: 're8UOJpBf_mKVPA23',
+  
       })
       .then(
         () => {
@@ -40,11 +41,11 @@ function Contact2(){
         </p>
     </div>
    
-    <div className="flex justify-center items-center w-[100vw] h-[130vh] md:h-[100vh] p-2 mb-5 md:mb-0">
+    <div className="flex justify-center items-center w-[100vw] h-[85vh] md:h-[100vh] md:mb-5 ">
    
-    <div className=" flex justify-center   flex-col-reverse md:flex-row   items-center w-[90%] h-[100%] gap-x-5 ">
+    <div className=" flex md:justify-center mt-10 md:mt-0 justify-start items-start  md:flex-row  md:items-center w-[90%] h-[100%] md:gap-x-5 ">
        
-         <div className="relative w-full h-[90%] flex-1  ">
+         <div className="relative w-full h-[90%] flex-1  hidden md:block ">
           <Image
            src="/about.jpg"
            alt="user"
@@ -53,7 +54,7 @@ function Contact2(){
           />
           </div>
 
-          <div className="md:flex-1 w-[90%]  md:h-[70%]  h-[60%] ">
+          <div className="md:flex-1 w-[90%]  md:h-[80%]  h-[60%]  ">
              
              <form action=""  ref={form} onSubmit={sendEmail} className="w-full flex flex-col gap-2 ">
                <div className=" w-full border border-black">
@@ -70,7 +71,7 @@ function Contact2(){
                </div>
               
                <div className=" w-full">
-                 <input type="submit" value="Send Message" className="btn m-2 bg-blue-500 text-white rounded-md py-3 px-5" />
+                 <input type="submit" value="Send Message" className="btn m-2 bg-blue-500 hover:scale-95 hover:cursor-pointer text-white rounded-md py-3 px-5" />
                </div>
              </form>
            

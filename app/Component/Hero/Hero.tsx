@@ -18,7 +18,7 @@ function Hero() {
   return (
     <div  /* style={{background:"url(/images/banner.jpg)"}} */ >
   <div id="hero "   data-aos="zoom-in"  data-aos-duration="1000" data-aos-delay="400"
-     className=" bg-cover bg-white overflow-hidden mt-[20vh] lg:mt-[12vh] bg-center h-[150vh] lg:h-[88vh] flex  justify-center items-center">
+     className=" bg-cover bg-white overflow-hidden mt-[12vh] bg-center h-[145vh] lg:h-[88vh] flex justify-center items-center">
        {/*- <Particle   />-*/} 
      <div className="con mt-10 flex lg:flex-row flex-col justify-center
      w-[95%] items-center h-[90%] lg:h-auto gap-3 ">
@@ -32,13 +32,13 @@ function Hero() {
           </h2>
       
         <p className='text-[11px] lg:text-[15px] font-bold  font-serif  text-black'>
-               Passionate Front-end Web Devloper . I specialize in utilizing the following tech stacks:
+               Passionate Front-end Web Devloper and 4th Year Cs Student at Aau . I specialize in utilizing the following tech stacks:
                Next.js | React.js | Typescript | Tailiwind css And Jest For Testing . Transforming Ideas Into 
                Seamless Web Expriance.
              
                  </p>
           <div className="flex justify-start gap-10 items-center 
-          ">
+       ">
             <button  
             className='px-[1rem] sm:px-[2rem]  hover:bg-transparent transition-all duration-200 py-[0.5rem] sm:py-[1rem]
             lg:text-[16px] text-[10px]  font-bold uppercase bg-[#3e64ff] text-white hover:text-black rounded-xl  flex 
@@ -79,7 +79,7 @@ function Hero() {
           </div>
       </div>
      
-     <div className="flex-1 relative  lg:h-[80vh] h-[70vh] lg:w-[50vw] w-[85vw] mt-3 lg:mt-0">
+     <div className="flex-1 relative  lg:h-[80vh] h-[70vh] lg:w-[50vw] w-[85vw]" >
         <Image 
         src='/home-right.png'
         alt='user'

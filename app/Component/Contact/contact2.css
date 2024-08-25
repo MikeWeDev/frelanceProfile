@@ -4,9 +4,7 @@
             font-weight: 400;
             position: relative;
             display:flex;
-            margin:20px 40px;
-
-           
+            margin:20px 40px;          
         }
       
     
@@ -24,5 +22,6 @@
       min-width:fit-content;
       line-height:20px;
       margin:20px 40px;
+      margin-right:60px;
      
   }

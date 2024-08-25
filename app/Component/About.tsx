@@ -8,7 +8,7 @@ function About() {
   }
   return (
     <div className='bg-[#25283D]'>
-     <div className='  h-[140vh] lg:h-[100vh]
+     <div className='  h-[130vh] lg:h-[100vh]
      flex justify-center items-center'  id="about" onClick={handleclick}  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000">
      
       <div className="flex flex-col gap-[6rem] lg:gap-0 justify-between lg:flex-row w-[80%] items-center">
@@ -16,7 +16,7 @@ function About() {
         >
       <h1 className='text-[25px] font-bold uppercase text-[#55e6a5] mb-[1rem] '>
         About me</h1>
-      <h2 className='uppercase text-[15px] lg:text-[20px] lg:text-[25px] lg:leading-[3rem]
+      <h2 className='uppercase text-[15px]  lg:text-[25px] lg:leading-[3rem]
        text-white   '>
         seamiless  <span className='text-yellow-400'>expriance</span> </h2>
       <div className="mid text-white mb-4 flex justify-between items-center">

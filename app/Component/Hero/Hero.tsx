@@ -32,7 +32,7 @@ function Hero() {
           </h2>
       
         <p className='text-[11px] lg:text-[15px] font-bold  font-serif  text-black'>
-               Passionate Front-end Web Devloper and 4th Year Cs Student at Aau . I specialize in utilizing the following tech stacks:
+                Passionate Front-end Web Devloper and 4th Year Cs Student at Aau . I specialize in utilizing the following tech stacks:
                Next.js | React.js | Typescript | Tailiwind css And Jest For Testing . Transforming Ideas Into 
                Seamless Web Expriance.
              

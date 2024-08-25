@@ -1,9 +1,18 @@
 'use client'
 import Image from 'next/image'
-import './contact2.css'
+import './contact2.scss'
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTelegram, faFacebook, faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 function Contact2(){
+  const telegramUserName = '@Mikyyetklyelij';
+  const linkdinUserName = 'https://www.linkedin.com/in/mikyas-negash-01b400263';
+  const whatsapplink="https://wa.me/qr/3GK62EOD3WVQE1"
+  const telegramLink = `https://t.me/${telegramUserName}`;
+
+
   const letters = ['S', 'A', 'Y', '-', 'H', 'Y']
   const form = useRef();
  
@@ -74,7 +83,19 @@ function Contact2(){
                <div className=" w-full">
                  <input type="submit" value="Send Message" className="btn m-2 bg-blue-500 hover:scale-95 hover:cursor-pointer text-white rounded-md py-3 px-5" />
                </div>
+               <div className="social-link" >
+              <a href={telegramLink} className="social">
+                <FontAwesomeIcon className="linkt" icon={faTelegram} color="#" />
+              </a >
+              <a href={linkdinUserName} className="social" >
+                <FontAwesomeIcon className="linkf" icon={faLinkedin} color="#"/>
+              </a>
+              <a href={whatsapplink} className="social">
+                <FontAwesomeIcon className="linkv" icon={faWhatsapp}color="#"/>
+              </a>
+            </div>
              </form>
+           
            
            </div>
 

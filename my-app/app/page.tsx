@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function FreelanceLandingPage() {
@@ -27,12 +26,14 @@ export default function FreelanceLandingPage() {
 
           {/* CTA Button */}
           <div className="mt-8">
-            <Link
-              href="/contact"
+            <a
+              href="https://et-agency.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3 px-8 rounded-full text-lg shadow-lg transition duration-300 transform hover:scale-105"
             >
               Let’s Work Together
-            </Link>
+            </a>
           </div>
 
           {/* Trusted Clients */}
@@ -74,62 +75,69 @@ export default function FreelanceLandingPage() {
 
       {/* POPULAR SERVICES */}
       <div className="mt-14">
-      <h2 className="text-4xl font-extrabold text-gray-900 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
-  My Most Popular Services
-</h2>
+        <h2 className="text-4xl font-extrabold text-gray-900 mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
+          My Most Popular Services
+        </h2>
 
-{/* Message */}
-<p className="text-xl text-red-600 mb-10 text-center font-semibold uppercase tracking-wider shadow-lg p-3 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-xl transform transition duration-300 hover:scale-105 hover:shadow-xl">
-  Choose one of the services below
-</p>
-
-
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-    {/* Service Card 1 */}
-    <Link href="/landingpage">
-      <motion.div
-        className="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition transform hover:shadow-2xl duration-300 cursor-pointer"
-        whileHover={{ scale: 1.03 }} // example hover effect
-      >
-        <Image
-          src="/indiviuall.jpg"
-          alt="Landing Page Design"
-          width={500}
-          height={500}
-          className="object-cover w-full h-56"
-        />
-        <div className="p-6">
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Landing Page Design</h3>
-          <p className="text-gray-600 text-sm">
-            High-converting, polished landing pages that drive results and build trust.
-          </p>
-        </div>
-      </motion.div>
-    </Link>
-
-    {/* Service Card 2 */}
-    <motion.div
-      className="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition transform hover:shadow-2xl duration-300 cursor-pointer"
-      whileHover={{ scale: 1.03 }} // example hover effect
-    >
-      <Image
-        src="/photo_6_2025-04-29_11-02-40.jpg"
-        alt="Custom Website Development"
-        width={800}
-        height={400}
-        className="object-cover w-full h-56"
-      />
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">Custom Website Development</h3>
-        <p className="text-gray-600 text-sm">
-          Pixel-perfect, responsive websites tailored to your brand’s voice and purpose.
+        {/* Message */}
+        <p className="text-xl text-red-600 mb-10 text-center font-semibold uppercase tracking-wider shadow-lg p-3 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-xl transform transition duration-300 hover:scale-105 hover:shadow-xl">
+          Choose one of the services below
         </p>
-      </div>
-    </motion.div>
-  </div>
-</div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Service Card 1 */}
+          <a
+            href="https://dowentowngym.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition transform hover:shadow-2xl duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+            >
+              <Image
+                src="/indiviuall.jpg"
+                alt="Landing Page Design"
+                width={500}
+                height={500}
+                className="object-cover w-full h-56"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Landing Page Design</h3>
+                <p className="text-gray-600 text-sm">
+                  High-converting, polished landing pages that drive results and build trust.
+                </p>
+              </div>
+            </motion.div>
+          </a>
+
+          {/* Service Card 2 */}
+          <a
+            href="https://et-newslater.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.div
+              className="bg-white rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition transform hover:shadow-2xl duration-300 cursor-pointer"
+              whileHover={{ scale: 1.03 }}
+            >
+              <Image
+                src="/photo_6_2025-04-29_11-02-40.jpg"
+                alt="Custom Website Development"
+                width={800}
+                height={400}
+                className="object-cover w-full h-56"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Custom Website Development</h3>
+                <p className="text-gray-600 text-sm">
+                  Pixel-perfect, responsive websites tailored to your brand’s voice and purpose.
+                </p>
+              </div>
+            </motion.div>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
